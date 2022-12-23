@@ -1,0 +1,25 @@
+{
+    "name": "extas/bots-alice",
+    "bots": [
+        {
+            "name": "alice-bot",
+            "token": "your-token",
+            "class": "extas\\components\\bots\\dispatchers\\DispatcherAlice",
+            "title": "Yandex Alice Bot",
+            "description": "This is Yandex Alice Bot",
+            "platform": "alice"
+        }
+    ],
+    "scenarios": [
+        {
+            "name": "my_skill_id",
+            "class": "extas\\components\\bots\\scenarios\\schemas\\ByMessageId"
+        }
+    ],
+    "steps": [
+        {
+            "name": "message_x",
+            "class": "extas\\components\\bots\\scenarios\\steps\\StepSkillId"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "extas/bots-alice",
+    "extensions": [
+        {
+            "class": "\\extas\\components\\extensions\\bots\\ExtensionAliceRequest",
+            "inteface": "\\extas\\interfaces\\extensions\\bots\\IExtensionAliceRequest",
+            "subject": "extas.bot.dispatcher.alice",
+            "methods": ["getAlice", "getStepName"]
+        }
+    ],
+    "plugins": [
+        {
+            "class": "\\extas\\components\\plugins\\bots\\PluginAliceCommand",
+            "stage": "extas.bot.scenario.alice"
+        }
+    ]
+}
